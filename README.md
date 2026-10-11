@@ -36,6 +36,8 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
+The first use of [`BAAI/bge-large-en-v1.5`](https://huggingface.co/BAAI/bge-large-en-v1.5) may download the base-model weights from the model provider.
+
 ## Synthetic example
 
 A complete demonstration using only artificial data can be run with:
@@ -50,10 +52,10 @@ For a shorter software smoke test:
 python run_synthetic_example.py --workdir synthetic_run_quick --quick
 ```
 
-The synthetic example demonstrates execution of the reported methodology; it is not intended to reproduce the numerical results of the study.
+The synthetic example performs encoder adaptation using the artificial summaries included with this repository before running the downstream analyses. It therefore demonstrates the reported adaptation procedure and wider computational workflow, but does not reproduce the study-trained encoder or the numerical results of the study.
 
 Individual scripts expose their arguments with `--help` and can be run independently.
 
 ## Data availability
 
-Participant-level study data are governed by the National Congenital Heart Disease Registry and are not included in this repository. No real participant records, transformed participant records or resampled participant-level observations are contained in the synthetic dataset.
+Participant-level study data are governed by the National Congenital Heart Disease Registry and are not included in this repository. The adapted encoder used for the study analyses was fitted using summaries derived from these governed data and is not distributed. The public implementation instead provides the complete adaptation procedure together with an entirely artificial cohort on which it can be executed independently. No real participant records, transformed participant records or resampled participant-level observations are contained in the synthetic dataset.
