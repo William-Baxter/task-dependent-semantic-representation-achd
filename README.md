@@ -39,26 +39,6 @@ No participant-level National Congenital Heart Disease Registry data are distrib
     └── 08_run_sensitivity_analyses.py
 ```
 
-## Methods-to-code crosswalk
-
-| Methods component | Public implementation |
-| --- | --- |
-| Preprocessing and deterministic clinical summaries | `01_build_clinical_summaries.py` |
-| Sentence encoder and conservative schema adaptation | `02_adapt_encoder.py` |
-| Two-view semantic representation and geometric calibration | `03_build_semantic_representation.py` |
-| Outcome-independent selection of the relative context–PRO balance | `04_select_lambda_and_cluster.py` |
-| HDBSCAN specification sensitivity and assignment uncertainty | `04_select_lambda_and_cluster.py` |
-| Matched semantic, tabular and Gower representation benchmarks | `05_benchmark_representations.py` |
-| Fixed-K K-means and Ward benchmarks | `05_benchmark_representations.py` |
-| Full-cohort within-lesion PRO burden construction | `06_construct_pro_burden.py` |
-| External characteristics of burden | `06_construct_pro_burden.py` |
-| Construction-PRO versus validator Spearman audit | `07_validate_clinically.py` |
-| Adjusted higher- versus lower-burden clinical associations | `07_validate_clinically.py` |
-| Repeated out-of-fold burden and full-summary prediction | `07_validate_clinically.py` |
-| Lesion-conditioned median-split benchmark | `08_run_sensitivity_analyses.py` |
-| Clinical evaluation of the matched HDBSCAN partitions | `08_run_sensitivity_analyses.py` |
-| Robustness across the supported λ interval | `08_run_sensitivity_analyses.py` |
-
 ## Installation
 
 The reported computational stack used Python 3.12.10. A clean environment can be created with:
@@ -103,6 +83,26 @@ The synthetic CSV documents the expected column names. The representation-constr
 - DASS-21 depression, anxiety and stress scores/classes.
 
 Validation outcomes are carried in separate columns and are never used upstream of the clinical-evaluation scripts. `record_id` is used only for deterministic alignment across artefacts.
+
+## Methods-to-code crosswalk
+
+| Methods component | Public implementation |
+| --- | --- |
+| Preprocessing and deterministic clinical summaries | `01_build_clinical_summaries.py` |
+| Sentence encoder and conservative schema adaptation | `02_adapt_encoder.py` |
+| Two-view semantic representation and geometric calibration | `03_build_semantic_representation.py` |
+| Outcome-independent selection of the relative context–PRO balance | `04_select_lambda_and_cluster.py` |
+| HDBSCAN specification sensitivity and assignment uncertainty | `04_select_lambda_and_cluster.py` |
+| Matched semantic, tabular and Gower representation benchmarks | `05_benchmark_representations.py` |
+| Fixed-K K-means and Ward benchmarks | `05_benchmark_representations.py` |
+| Full-cohort within-lesion PRO burden construction | `06_construct_pro_burden.py` |
+| External characteristics of burden | `06_construct_pro_burden.py` |
+| Construction-PRO versus validator Spearman audit | `07_validate_clinically.py` |
+| Adjusted higher- versus lower-burden clinical associations | `07_validate_clinically.py` |
+| Repeated out-of-fold burden and full-summary prediction | `07_validate_clinically.py` |
+| Lesion-conditioned median-split benchmark | `08_run_sensitivity_analyses.py` |
+| Clinical evaluation of the matched HDBSCAN partitions | `08_run_sensitivity_analyses.py` |
+| Robustness across the supported λ interval | `08_run_sensitivity_analyses.py` |
 
 ## Reproducibility notes
 
