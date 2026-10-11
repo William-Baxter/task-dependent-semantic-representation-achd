@@ -3,12 +3,9 @@
 This repository contains the code and synthetic example data accompanying the manuscript:
 
 **Task-dependent value of transformer representations for phenotyping and patient-reported burden in adult congenital heart disease**
-
 William Baxter et al.
 
 *npj Digital Medicine*
-
----
 
 ## Overview
 
