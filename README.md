@@ -9,9 +9,7 @@ William Baxter et al.
 
 ## Overview
 
-The repository provides a registry-independent implementation of the computational analyses used to evaluate semantic patient representation, phenotype structure, patient-reported burden, and held-out clinical relevance in adults with congenital heart disease.
-
-No participant-level National Congenital Heart Disease Registry data are distributed. The included synthetic cohort is entirely artificial and is provided only to demonstrate the workflow and required input schema. Numerical results reported in the manuscript require access to the governed study data.
+The repository provides a registry-independent implementation of the computational analyses used to evaluate semantic patient representation, phenotype structure, patient-reported burden and held-out clinical relevance in adults with congenital heart disease. An entirely artificial synthetic cohort is included to demonstrate the workflow and required input structure.
 
 ## Code
 
@@ -38,7 +36,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-## Synthetic worked example
+## Synthetic example
 
 A complete demonstration using only artificial data can be run with:
 
@@ -52,7 +50,7 @@ For a shorter software smoke test:
 python run_synthetic_example.py --workdir synthetic_run_quick --quick
 ```
 
-The synthetic example demonstrates execution of the published methodology; it is not intended to reproduce the numerical results of the study.
+The synthetic example demonstrates execution of the reported methodology; it is not intended to reproduce the numerical results of the study.
 
 Individual scripts expose their arguments with `--help` and can be run independently.
 
