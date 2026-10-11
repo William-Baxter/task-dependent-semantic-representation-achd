@@ -1,8 +1,18 @@
-# ACHD semantic phenotyping and patient-reported burden
+# Task-dependent semantic representation in adult congenital heart disease
 
-This repository provides a compact, registry-independent implementation of the computational methods used to construct deterministic clinical summaries, generate semantic patient representations, select the relative context–PRO weighting, compare clustering representations, construct within-lesion patient-reported burden, and evaluate held-out clinical outcomes.
+This repository contains the code and synthetic example data accompanying the manuscript:
 
-No participant-level Registry data are distributed. `synthetic_data/synthetic_cohort.csv` is an entirely artificial dataset created only to exercise the code paths and document the required input schema. Running the workflow on the synthetic cohort will not reproduce the numerical results reported in the article; those results require the governed study data.
+**Task-dependent value of transformer representations for phenotyping and patient-reported burden in adult congenital heart disease**
+
+William Baxter et al.
+
+*npj Digital Medicine*
+
+---
+
+The repository provides a registry-independent implementation of the computational analyses used to evaluate semantic patient representation, phenotype structure, patient-reported burden, and held-out clinical relevance in adults with congenital heart disease.
+
+No participant-level National Congenital Heart Disease Registry data are distributed. The included synthetic cohort is entirely artificial and is provided only to demonstrate the workflow and required input schema. Numerical results reported in the manuscript require access to the governed study data.
 
 ## Repository layout
 
@@ -116,16 +126,8 @@ Validation outcomes are carried in separate columns and are never used upstream 
 
 ## Reproducibility notes
 
-- Encoder partition seed: 123.
-- λ grid: 0.000 to 1.000 by 0.025.
-- Primary λ-selection stability: 50 paired, exact-lesion-stratified 80% resamples.
-- HDBSCAN specification grid: minimum cluster size 30/40/50 × minimum samples 5/10/15 × leaf/EOM; 10 paired 80% resamples per configuration and λ.
-- Burden construction: K-means K=2, 10 initialisations, seed 42.
-- Fixed-K comparator: K-means seed 123, 20 initialisations; Ward linkage; K=2–12.
-- Burden clinical evaluation: five-fold cross-validation repeated 10 times, base seed 20260903.
-- Direct probes: five outer folds × 10 repeats, with inner five-fold regularisation selection.
-- Marginal risk-difference uncertainty: 1,500 multivariate-normal coefficient draws.
+Analysis defaults used for the manuscript are encoded directly in the numbered scripts. Command-line options intended for synthetic-data smoke testing are explicitly labelled and do not alter the manuscript specification unless invoked.
 
-## Data availability boundary
+## Data availability
 
 The public code is designed so that the complete methodological workflow can be inspected and executed without access to Registry participant data. Governed patient-level data are not included and must not be added to this repository. The synthetic cohort contains no real participant records and no transformed, perturbed or resampled patient-level observations.
