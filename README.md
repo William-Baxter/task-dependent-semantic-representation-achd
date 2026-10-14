@@ -33,7 +33,13 @@ The reported computational stack used Python 3.12.10:
 
 ```bash
 python -m venv .venv
+
+# macOS/Linux
 source .venv/bin/activate
+
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+
 python -m pip install -r requirements.txt
 ```
 
