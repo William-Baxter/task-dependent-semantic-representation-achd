@@ -1,0 +1,12 @@
+column,domain,derivation_n,scheme,q10,q25,q30,q70,q75,q90
+pedsql_core_score_phys_scaled,Generic Core physical functioning,907,5-band,70.3125,,82.8125,93.75,,100
+pedsql_core_score_emo_scaled,Generic Core emotional functioning,907,5-band,52,,64,84,,96
+pedsql_core_score_soc_scaled,Generic Core social functioning,907,5-band,64,,80,96,,100
+pedsql_core_score_sch_scaled,Generic Core school/work functioning,905,5-band,60,,72,88,,100
+pedsql_core_score_psy_scaled,Generic Core psychosocial health,905,5-band,51.6666666667,,66.6666666667,85,,95
+pedsql_core_score_tot_scaled,Generic Core total score,905,5-band,50,,66.3043478261,84.7826086957,,95.652173913
+pedsql_cardiac_score_treat_scaled,Cardiac heart problems and treatment,903,5-band,42.8571428571,,60.7142857143,82.1428571429,,92.8571428571
+pedsql_cardiac_score_ppa_scaled,Cardiac perceived physical appearance,901,5-band,33.3333333333,,58.3333333333,91.6666666667,,100
+pedsql_cardiac_score_ta_scaled,Cardiac treatment anxiety,901,3-band fallback,50,62.5,75,100,100,100
+pedsql_cardiac_score_cp_scaled,Cardiac cognitive problems,900,5-band,35,,58.5,85,,100
+pedsql_cardiac_score_com_scaled,Cardiac communication,900,3-band fallback,41.6666666667,58.3333333333,66.6666666667,100,100,100
