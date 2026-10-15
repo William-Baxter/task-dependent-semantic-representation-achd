@@ -24,7 +24,7 @@ The analysis is organised in the same sequence as the Methods:
 | `04_select_lambda_and_cluster.py` | Relative view weighting and HDBSCAN selection |
 | `05_benchmark_representations.py` | Semantic, tabular and Gower benchmarks |
 | `06_construct_pro_burden.py` | Within-lesion patient-reported burden |
-| `07_validate_clinically.py` | Held-out clinical and functional evaluation |
+| `07_validate_clinically.py` | Held-out clinical validation |
 | `08_run_sensitivity_analyses.py` | Sensitivity analyses |
 
 ## Installation
