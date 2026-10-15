@@ -10,7 +10,7 @@ William Baxter et al.
 
 ## Overview
 
-The repository provides a registry-independent implementation of the computational analyses used to evaluate semantic patient representation, phenotype structure and patient-reported burden, together with held-out clinical validation in adults with congenital heart disease.
+The repository provides a Registry-independent implementation of the computational analyses used to evaluate semantic patient representation, phenotype structure and patient-reported burden, together with held-out clinical validation in adults with congenital heart disease.
 
 ## Code
 
